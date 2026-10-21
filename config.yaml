@@ -1,0 +1,31 @@
+embedding:
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 32
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 80
+
+retrieval:
+  top_k: 5
+  dense_weight: 0.55
+  bm25_weight: 0.45
+  rrf_k: 60
+  rerank_model: cross-encoder/ms-marco-MiniLM-L-6-v2
+  rerank_candidates: 20
+
+generation:
+  # Prefer free providers via .env: LLM_PROVIDER=groq or huggingface
+  temperature: 0.1
+  max_context_chars: 6000
+  max_tokens: 512
+
+paths:
+  chroma_dir: artifacts/chroma
+  collection_name: docs
+  eval_dataset: data/eval/qa_pairs.json
+  eval_report_dir: artifacts/evals
+
+api:
+  host: 127.0.0.1
+  port: 8000

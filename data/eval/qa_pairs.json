@@ -1,0 +1,58 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the refund policy for annual plans?",
+    "relevant_doc_ids": ["billing_policy.md"],
+    "relevant_contains": ["14-day money-back guarantee", "Annual plans"],
+    "reference_answer": "Annual plans have a 14-day money-back guarantee from the purchase date. After 14 days, refunds are prorated only if Acme discontinues the service."
+  },
+  {
+    "id": "q2",
+    "question": "Which regions does Acme Cloud operate in?",
+    "relevant_doc_ids": ["product_overview.md"],
+    "relevant_contains": ["us-east-1", "eu-west-1", "ap-south-1"],
+    "reference_answer": "Acme Cloud operates in us-east-1, eu-west-1, and ap-south-1."
+  },
+  {
+    "id": "q3",
+    "question": "Is HIPAA BAA available and where?",
+    "relevant_doc_ids": ["security.md"],
+    "relevant_contains": ["HIPAA", "us-east-1"],
+    "reference_answer": "HIPAA Business Associate Agreements are available for Enterprise customers in us-east-1 only."
+  },
+  {
+    "id": "q4",
+    "question": "What is the Growth plan API rate limit per minute?",
+    "relevant_doc_ids": ["api_limits.md"],
+    "relevant_contains": ["Growth", "300"],
+    "reference_answer": "The Growth plan allows 300 requests per minute with a burst of 600."
+  },
+  {
+    "id": "q5",
+    "question": "How often does Acme DB run automated backups?",
+    "relevant_doc_ids": ["product_overview.md"],
+    "relevant_contains": ["automated backups every 6 hours", "Acme DB"],
+    "reference_answer": "Acme DB has automated backups every 6 hours."
+  },
+  {
+    "id": "q6",
+    "question": "What encryption is used for data at rest?",
+    "relevant_doc_ids": ["security.md"],
+    "relevant_contains": ["AES-256", "at rest"],
+    "reference_answer": "Data at rest is encrypted with AES-256."
+  },
+  {
+    "id": "q7",
+    "question": "Are monthly plan unused periods refundable?",
+    "relevant_doc_ids": ["billing_policy.md"],
+    "relevant_contains": ["not refundable", "Monthly plans"],
+    "reference_answer": "Unused time on monthly plans is not refundable."
+  },
+  {
+    "id": "q8",
+    "question": "What HTTP status is returned when rate limited?",
+    "relevant_doc_ids": ["api_limits.md"],
+    "relevant_contains": ["HTTP 429", "Retry-After"],
+    "reference_answer": "Rate-limit responses return HTTP 429 with a Retry-After header."
+  }
+]

@@ -1,0 +1,17 @@
+.git/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+artifacts/chroma/
+artifacts/evals/
+artifacts/**
+!artifacts/.gitkeep
+PROJECT_ROMAN_URDU.md
+*.log
+.DS_Store
